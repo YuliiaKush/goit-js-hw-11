@@ -1,32 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Homework 11</title>
-  <link rel="stylesheet" href="./css/index.css" />
-  <link href='https://css.gg/css' rel='stylesheet'>
-</head>
-
-<body>
-
-  <div class="search-wrapper">
-    <form class="input-holder">
-      <input class="search-input" type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
-      <button class="search-icon"><span></span></button>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page title</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- <script type="module" src="./index.js"></script> -->
+  </head>
+  <body>
+    <form class="search-form" id="search-form">
+      <input
+        class="input"
+        type="text"
+        name="searchQuery"
+        autocomplete="off"
+        placeholder="Search images..."
+      />
+      <button class="search-btn" type="submit">Search</button>
     </form>
-    <button class="close"></button>
-  </div>
-
-  <div class="gallery">
-
-  </div>
-
-  <button type="button" class="load-more ishiden">Load more</button>
-
-  <script type="module" src="./js/indexScroll.js"></script>
-</body>
-
+    <div class="gallery"></div>
+    <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <!-- <include src="./partials/example.html"></include> -->
+    <script type="module" src="./index.js"></script>
+  </body>
 </html>
